@@ -1,5 +1,5 @@
 //
-//  Database.h
+//  DatabaseImplementation.h
 //  Database
 //
 //  Created by Tobias Sommer on 10/27/12.
@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QueuedDatabase.h"
 
-@interface Database : NSObject
+@interface Database : NSObject <QueuedDatabase>
 
 @end

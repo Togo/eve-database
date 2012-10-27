@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
-		CD868161163BBCEB00667709 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868160163BBCEB00667709 /* Database.m */; };
 		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
 		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
 		CD86816D163BBCEB00667709 /* Database.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868153163BBCEB00667709 /* Database.dylib */; };
 		CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD868171163BBCEC00667709 /* InfoPlist.strings */; };
 		CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868175163BBCEC00667709 /* DatabaseTests.m */; };
+		CD8681C5163BBDA500667709 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681BA163BBDA500667709 /* FMDatabase.h */; };
+		CD8681C6163BBDA500667709 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681BB163BBDA500667709 /* FMDatabase.m */; };
+		CD8681C7163BBDA500667709 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681BC163BBDA500667709 /* FMDatabaseAdditions.h */; };
+		CD8681C8163BBDA500667709 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681BD163BBDA500667709 /* FMDatabaseAdditions.m */; };
+		CD8681C9163BBDA500667709 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681BE163BBDA500667709 /* FMDatabasePool.h */; };
+		CD8681CA163BBDA500667709 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681BF163BBDA500667709 /* FMDatabasePool.m */; };
+		CD8681CB163BBDA600667709 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681C0163BBDA500667709 /* FMDatabaseQueue.h */; };
+		CD8681CC163BBDA600667709 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681C1163BBDA500667709 /* FMDatabaseQueue.m */; };
+		CD8681CD163BBDA600667709 /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681C2163BBDA500667709 /* fmdb.m */; };
+		CD8681CE163BBDA600667709 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681C3163BBDA500667709 /* FMResultSet.h */; };
+		CD8681CF163BBDA600667709 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681C4163BBDA500667709 /* FMResultSet.m */; };
+		CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8681D0163BBDB200667709 /* libsqlite3.dylib */; };
+		CD8681D5163BBFB800667709 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* Database.h */; };
+		CD8681D6163BBFB800667709 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681D4163BBFB800667709 /* Database.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +46,27 @@
 		CD86815A163BBCEB00667709 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CD86815B163BBCEB00667709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD86815E163BBCEB00667709 /* Database-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Database-Prefix.pch"; sourceTree = "<group>"; };
-		CD86815F163BBCEB00667709 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
-		CD868160163BBCEB00667709 /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 		CD868167163BBCEB00667709 /* DatabaseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD868168163BBCEB00667709 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CD868170163BBCEB00667709 /* DatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DatabaseTests-Info.plist"; sourceTree = "<group>"; };
 		CD868172163BBCEC00667709 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD868174163BBCEC00667709 /* DatabaseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseTests.h; sourceTree = "<group>"; };
 		CD868175163BBCEC00667709 /* DatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTests.m; sourceTree = "<group>"; };
+		CD8681BA163BBDA500667709 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CD8681BB163BBDA500667709 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CD8681BC163BBDA500667709 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CD8681BD163BBDA500667709 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CD8681BE163BBDA500667709 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CD8681BF163BBDA500667709 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CD8681C0163BBDA500667709 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CD8681C1163BBDA500667709 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CD8681C2163BBDA500667709 /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
+		CD8681C3163BBDA500667709 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CD8681C4163BBDA500667709 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CD8681D0163BBDB200667709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD8681D2163BBE6800667709 /* QueuedDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueuedDatabase.h; sourceTree = "<group>"; };
+		CD8681D3163BBFB800667709 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		CD8681D4163BBFB800667709 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */,
 				CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +95,9 @@
 		CD868148163BBCEB00667709 = {
 			isa = PBXGroup;
 			children = (
+				CD8681B9163BBDA500667709 /* src */,
 				CD86815C163BBCEB00667709 /* Database */,
+				CD86815D163BBCEB00667709 /* Supporting Files */,
 				CD86816E163BBCEB00667709 /* DatabaseTests */,
 				CD868155163BBCEB00667709 /* Frameworks */,
 				CD868154163BBCEB00667709 /* Products */,
@@ -107,9 +136,9 @@
 		CD86815C163BBCEB00667709 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				CD86815F163BBCEB00667709 /* Database.h */,
-				CD868160163BBCEB00667709 /* Database.m */,
-				CD86815D163BBCEB00667709 /* Supporting Files */,
+				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
+				CD8681D3163BBFB800667709 /* Database.h */,
+				CD8681D4163BBFB800667709 /* Database.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -120,6 +149,7 @@
 				CD86815E163BBCEB00667709 /* Database-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Database;
 			sourceTree = "<group>";
 		};
 		CD86816E163BBCEB00667709 /* DatabaseTests */ = {
@@ -141,6 +171,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CD8681B9163BBDA500667709 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CD8681D0163BBDB200667709 /* libsqlite3.dylib */,
+				CD8681BA163BBDA500667709 /* FMDatabase.h */,
+				CD8681BB163BBDA500667709 /* FMDatabase.m */,
+				CD8681BC163BBDA500667709 /* FMDatabaseAdditions.h */,
+				CD8681BD163BBDA500667709 /* FMDatabaseAdditions.m */,
+				CD8681BE163BBDA500667709 /* FMDatabasePool.h */,
+				CD8681BF163BBDA500667709 /* FMDatabasePool.m */,
+				CD8681C0163BBDA500667709 /* FMDatabaseQueue.h */,
+				CD8681C1163BBDA500667709 /* FMDatabaseQueue.m */,
+				CD8681C2163BBDA500667709 /* fmdb.m */,
+				CD8681C3163BBDA500667709 /* FMResultSet.h */,
+				CD8681C4163BBDA500667709 /* FMResultSet.m */,
+			);
+			name = src;
+			path = fmdb/src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,6 +198,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8681C5163BBDA500667709 /* FMDatabase.h in Headers */,
+				CD8681C7163BBDA500667709 /* FMDatabaseAdditions.h in Headers */,
+				CD8681C9163BBDA500667709 /* FMDatabasePool.h in Headers */,
+				CD8681CB163BBDA600667709 /* FMDatabaseQueue.h in Headers */,
+				CD8681CE163BBDA600667709 /* FMResultSet.h in Headers */,
+				CD8681D5163BBFB800667709 /* Database.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD868161163BBCEB00667709 /* Database.m in Sources */,
+				CD8681C6163BBDA500667709 /* FMDatabase.m in Sources */,
+				CD8681C8163BBDA500667709 /* FMDatabaseAdditions.m in Sources */,
+				CD8681CA163BBDA500667709 /* FMDatabasePool.m in Sources */,
+				CD8681CC163BBDA600667709 /* FMDatabaseQueue.m in Sources */,
+				CD8681CD163BBDA600667709 /* fmdb.m in Sources */,
+				CD8681CF163BBDA600667709 /* FMResultSet.m in Sources */,
+				CD8681D6163BBFB800667709 /* Database.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +424,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/DatabaseTests\"",
+					"\"$(SRCROOT)/DatabaseTests/libraries\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DatabaseTests/DatabaseTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -375,10 +443,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/DatabaseTests\"",
+					"\"$(SRCROOT)/DatabaseTests/libraries\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "DatabaseTests/DatabaseTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
