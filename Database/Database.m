@@ -15,6 +15,8 @@
 @synthesize databaseName;
 @synthesize databasePath;
 
+@synthesize migrationManager;
+
 - (id) initWithNameAndPath :(NSString*) name :(NSString*) path {
   self = [super init];
   
@@ -22,6 +24,7 @@
   self.databasePath = path;
   
   [self createDatabaseConnection];
+  [self executeMigrations];
   
   return self;
 }

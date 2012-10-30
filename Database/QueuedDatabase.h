@@ -11,12 +11,14 @@
 #import "FMDatabaseQueue.h"
 #import "FMResultSet.h"
 
+#import "FmdbMigrationManager.h"
+
 @protocol QueuedDatabase <NSObject>
 
-@property (strong, nonatomic) FMDatabaseQueue  *queuedDatabase;
-@property (strong, nonatomic) FMDatabase       *database;
-@property (strong, nonatomic) NSString         *databaseName;
-@property (strong, nonatomic) NSString         *databasePath;
+@property (strong, nonatomic) FMDatabaseQueue       *queuedDatabase;
+@property (strong, nonatomic) FMDatabase            *database;
+@property (strong, nonatomic) NSString              *databaseName;
+@property (strong, nonatomic) NSString              *databasePath;
 
 - (id) initWithNameAndPath :(NSString*) name :(NSString*) path;
 - (void) createDatabaseConnection;
@@ -27,7 +29,5 @@
 - (BOOL) executeUpdate :(NSString*) query;
 
 - (void) printErrorMessage;
-
-- (BOOL) executeMigrations;
 
 @end

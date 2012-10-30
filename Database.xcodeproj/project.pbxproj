@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4FED4E163D27E50086C79F /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4FED48163D27E50086C79F /* FmdbMigration.h */; };
+		CD4FED4F163D27E50086C79F /* FmdbMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED49163D27E50086C79F /* FmdbMigration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD4FED50163D27E50086C79F /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4FED4A163D27E50086C79F /* FmdbMigrationColumn.h */; };
+		CD4FED51163D27E50086C79F /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED4B163D27E50086C79F /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD4FED52163D27E50086C79F /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4FED4C163D27E50086C79F /* FmdbMigrationManager.h */; };
+		CD4FED53163D27E50086C79F /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED4D163D27E50086C79F /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
 		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
 		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD4FED48163D27E50086C79F /* FmdbMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigration.h; path = "../../fmdb-migration-manager/Classes/FmdbMigration.h"; sourceTree = "<group>"; };
+		CD4FED49163D27E50086C79F /* FmdbMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigration.m; path = "../../fmdb-migration-manager/Classes/FmdbMigration.m"; sourceTree = "<group>"; };
+		CD4FED4A163D27E50086C79F /* FmdbMigrationColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationColumn.h; path = "../../fmdb-migration-manager/Classes/FmdbMigrationColumn.h"; sourceTree = "<group>"; };
+		CD4FED4B163D27E50086C79F /* FmdbMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationColumn.m; path = "../../fmdb-migration-manager/Classes/FmdbMigrationColumn.m"; sourceTree = "<group>"; };
+		CD4FED4C163D27E50086C79F /* FmdbMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationManager.h; path = "../../fmdb-migration-manager/Classes/FmdbMigrationManager.h"; sourceTree = "<group>"; };
+		CD4FED4D163D27E50086C79F /* FmdbMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationManager.m; path = "../../fmdb-migration-manager/Classes/FmdbMigrationManager.m"; sourceTree = "<group>"; };
 		CD868153163BBCEB00667709 /* Database.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Database.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD868156163BBCEB00667709 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD868159163BBCEB00667709 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -174,6 +186,12 @@
 		CD8681B9163BBDA500667709 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				CD4FED48163D27E50086C79F /* FmdbMigration.h */,
+				CD4FED49163D27E50086C79F /* FmdbMigration.m */,
+				CD4FED4A163D27E50086C79F /* FmdbMigrationColumn.h */,
+				CD4FED4B163D27E50086C79F /* FmdbMigrationColumn.m */,
+				CD4FED4C163D27E50086C79F /* FmdbMigrationManager.h */,
+				CD4FED4D163D27E50086C79F /* FmdbMigrationManager.m */,
 				CD8681D0163BBDB200667709 /* libsqlite3.dylib */,
 				CD8681BA163BBDA500667709 /* FMDatabase.h */,
 				CD8681BB163BBDA500667709 /* FMDatabase.m */,
@@ -204,6 +222,9 @@
 				CD8681CB163BBDA600667709 /* FMDatabaseQueue.h in Headers */,
 				CD8681CE163BBDA600667709 /* FMResultSet.h in Headers */,
 				CD8681D5163BBFB800667709 /* Database.h in Headers */,
+				CD4FED4E163D27E50086C79F /* FmdbMigration.h in Headers */,
+				CD4FED50163D27E50086C79F /* FmdbMigrationColumn.h in Headers */,
+				CD4FED52163D27E50086C79F /* FmdbMigrationManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +333,9 @@
 				CD8681CD163BBDA600667709 /* fmdb.m in Sources */,
 				CD8681CF163BBDA600667709 /* FMResultSet.m in Sources */,
 				CD8681D6163BBFB800667709 /* Database.m in Sources */,
+				CD4FED4F163D27E50086C79F /* FmdbMigration.m in Sources */,
+				CD4FED51163D27E50086C79F /* FmdbMigrationColumn.m in Sources */,
+				CD4FED53163D27E50086C79F /* FmdbMigrationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +501,7 @@
 				CD86817B163BBCEC00667709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD86817C163BBCEC00667709 /* Build configuration list for PBXNativeTarget "DatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +510,7 @@
 				CD86817E163BBCEC00667709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
