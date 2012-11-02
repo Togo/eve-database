@@ -128,7 +128,7 @@
 #pragma clang diagnostic pop
 
 - (NSDictionary*)resultDictionary {
-    
+  
     NSUInteger num_cols = (NSUInteger)sqlite3_data_count([_statement statement]);
     
     if (num_cols > 0) {
