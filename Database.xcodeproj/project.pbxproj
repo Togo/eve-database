@@ -10,23 +10,23 @@
 		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; };
 		CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9E61640028F00C7432D /* DatabaseMigration.m */; };
 		CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9EA164004BE00C7432D /* MigrationTests.m */; };
-		CD82FA061643F04600C7432D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FB1643F04600C7432D /* FMDatabase.h */; };
-		CD82FA071643F04600C7432D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9FC1643F04600C7432D /* FMDatabase.m */; };
-		CD82FA081643F04600C7432D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */; };
-		CD82FA091643F04600C7432D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */; };
-		CD82FA0A1643F04600C7432D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FF1643F04600C7432D /* FMDatabasePool.h */; };
-		CD82FA0B1643F04600C7432D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA001643F04600C7432D /* FMDatabasePool.m */; };
-		CD82FA0C1643F04600C7432D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA011643F04600C7432D /* FMDatabaseQueue.h */; };
-		CD82FA0D1643F04600C7432D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA021643F04600C7432D /* FMDatabaseQueue.m */; };
-		CD82FA0E1643F04600C7432D /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA031643F04600C7432D /* fmdb.m */; };
-		CD82FA0F1643F04600C7432D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA041643F04600C7432D /* FMResultSet.h */; };
-		CD82FA101643F04600C7432D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA051643F04600C7432D /* FMResultSet.m */; };
-		CD82FA171643F05800C7432D /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA111643F05800C7432D /* FmdbMigration.h */; };
-		CD82FA181643F05800C7432D /* FmdbMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA121643F05800C7432D /* FmdbMigration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CD82FA191643F05800C7432D /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */; };
-		CD82FA1A1643F05800C7432D /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CD82FA1B1643F05800C7432D /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA151643F05800C7432D /* FmdbMigrationManager.h */; };
-		CD82FA1C1643F05800C7432D /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA161643F05800C7432D /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA5B1643F69B00C7432D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA501643F69B00C7432D /* FMDatabase.h */; };
+		CD82FA5C1643F69B00C7432D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA511643F69B00C7432D /* FMDatabase.m */; };
+		CD82FA5D1643F69B00C7432D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA521643F69B00C7432D /* FMDatabaseAdditions.h */; };
+		CD82FA5E1643F69B00C7432D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA531643F69B00C7432D /* FMDatabaseAdditions.m */; };
+		CD82FA5F1643F69B00C7432D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA541643F69B00C7432D /* FMDatabasePool.h */; };
+		CD82FA601643F69B00C7432D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA551643F69B00C7432D /* FMDatabasePool.m */; };
+		CD82FA611643F69B00C7432D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA561643F69B00C7432D /* FMDatabaseQueue.h */; };
+		CD82FA621643F69B00C7432D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA571643F69B00C7432D /* FMDatabaseQueue.m */; };
+		CD82FA631643F69B00C7432D /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA581643F69B00C7432D /* fmdb.m */; };
+		CD82FA641643F69B00C7432D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA591643F69B00C7432D /* FMResultSet.h */; };
+		CD82FA651643F69B00C7432D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA5A1643F69B00C7432D /* FMResultSet.m */; };
+		CD82FA6C1643F70F00C7432D /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA661643F70F00C7432D /* FmdbMigration.h */; };
+		CD82FA6D1643F70F00C7432D /* FmdbMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA671643F70F00C7432D /* FmdbMigration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA6E1643F70F00C7432D /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA681643F70F00C7432D /* FmdbMigrationColumn.h */; };
+		CD82FA6F1643F70F00C7432D /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA691643F70F00C7432D /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA6A1643F70F00C7432D /* FmdbMigrationManager.h */; };
+		CD82FA711643F70F00C7432D /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA6B1643F70F00C7432D /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
 		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
 		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
@@ -54,23 +54,23 @@
 		CD82F9E61640028F00C7432D /* DatabaseMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseMigration.m; sourceTree = "<group>"; };
 		CD82F9E9164004BE00C7432D /* MigrationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationTests.h; sourceTree = "<group>"; };
 		CD82F9EA164004BE00C7432D /* MigrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationTests.m; sourceTree = "<group>"; };
-		CD82F9FB1643F04600C7432D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		CD82F9FC1643F04600C7432D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		CD82F9FF1643F04600C7432D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		CD82FA001643F04600C7432D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		CD82FA011643F04600C7432D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		CD82FA021643F04600C7432D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		CD82FA031643F04600C7432D /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
-		CD82FA041643F04600C7432D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		CD82FA051643F04600C7432D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		CD82FA111643F05800C7432D /* FmdbMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigration.h; path = "fmdb-migration-manager/Classes/FmdbMigration.h"; sourceTree = SOURCE_ROOT; };
-		CD82FA121643F05800C7432D /* FmdbMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigration.m; path = "fmdb-migration-manager/Classes/FmdbMigration.m"; sourceTree = SOURCE_ROOT; };
-		CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationColumn.h; path = "fmdb-migration-manager/Classes/FmdbMigrationColumn.h"; sourceTree = SOURCE_ROOT; };
-		CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationColumn.m; path = "fmdb-migration-manager/Classes/FmdbMigrationColumn.m"; sourceTree = SOURCE_ROOT; };
-		CD82FA151643F05800C7432D /* FmdbMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationManager.h; path = "fmdb-migration-manager/Classes/FmdbMigrationManager.h"; sourceTree = SOURCE_ROOT; };
-		CD82FA161643F05800C7432D /* FmdbMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationManager.m; path = "fmdb-migration-manager/Classes/FmdbMigrationManager.m"; sourceTree = SOURCE_ROOT; };
+		CD82FA501643F69B00C7432D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		CD82FA511643F69B00C7432D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		CD82FA521643F69B00C7432D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		CD82FA531643F69B00C7432D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		CD82FA541643F69B00C7432D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		CD82FA551643F69B00C7432D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		CD82FA561643F69B00C7432D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		CD82FA571643F69B00C7432D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		CD82FA581643F69B00C7432D /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fmdb.m; path = fmdb/fmdb.m; sourceTree = SOURCE_ROOT; };
+		CD82FA591643F69B00C7432D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		CD82FA5A1643F69B00C7432D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		CD82FA661643F70F00C7432D /* FmdbMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigration.h; path = fmdb/FmdbMigration.h; sourceTree = SOURCE_ROOT; };
+		CD82FA671643F70F00C7432D /* FmdbMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigration.m; path = fmdb/FmdbMigration.m; sourceTree = SOURCE_ROOT; };
+		CD82FA681643F70F00C7432D /* FmdbMigrationColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationColumn.h; path = fmdb/FmdbMigrationColumn.h; sourceTree = SOURCE_ROOT; };
+		CD82FA691643F70F00C7432D /* FmdbMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationColumn.m; path = fmdb/FmdbMigrationColumn.m; sourceTree = SOURCE_ROOT; };
+		CD82FA6A1643F70F00C7432D /* FmdbMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationManager.h; path = fmdb/FmdbMigrationManager.h; sourceTree = SOURCE_ROOT; };
+		CD82FA6B1643F70F00C7432D /* FmdbMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationManager.m; path = fmdb/FmdbMigrationManager.m; sourceTree = SOURCE_ROOT; };
 		CD868153163BBCEB00667709 /* Database.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Database.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD868156163BBCEB00667709 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD868159163BBCEB00667709 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -199,23 +199,23 @@
 		CD8681B9163BBDA500667709 /* Fmdd+Fmdm */ = {
 			isa = PBXGroup;
 			children = (
-				CD82FA111643F05800C7432D /* FmdbMigration.h */,
-				CD82FA121643F05800C7432D /* FmdbMigration.m */,
-				CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */,
-				CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */,
-				CD82FA151643F05800C7432D /* FmdbMigrationManager.h */,
-				CD82FA161643F05800C7432D /* FmdbMigrationManager.m */,
-				CD82F9FB1643F04600C7432D /* FMDatabase.h */,
-				CD82F9FC1643F04600C7432D /* FMDatabase.m */,
-				CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */,
-				CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */,
-				CD82F9FF1643F04600C7432D /* FMDatabasePool.h */,
-				CD82FA001643F04600C7432D /* FMDatabasePool.m */,
-				CD82FA011643F04600C7432D /* FMDatabaseQueue.h */,
-				CD82FA021643F04600C7432D /* FMDatabaseQueue.m */,
-				CD82FA031643F04600C7432D /* fmdb.m */,
-				CD82FA041643F04600C7432D /* FMResultSet.h */,
-				CD82FA051643F04600C7432D /* FMResultSet.m */,
+				CD82FA661643F70F00C7432D /* FmdbMigration.h */,
+				CD82FA671643F70F00C7432D /* FmdbMigration.m */,
+				CD82FA681643F70F00C7432D /* FmdbMigrationColumn.h */,
+				CD82FA691643F70F00C7432D /* FmdbMigrationColumn.m */,
+				CD82FA6A1643F70F00C7432D /* FmdbMigrationManager.h */,
+				CD82FA6B1643F70F00C7432D /* FmdbMigrationManager.m */,
+				CD82FA501643F69B00C7432D /* FMDatabase.h */,
+				CD82FA511643F69B00C7432D /* FMDatabase.m */,
+				CD82FA521643F69B00C7432D /* FMDatabaseAdditions.h */,
+				CD82FA531643F69B00C7432D /* FMDatabaseAdditions.m */,
+				CD82FA541643F69B00C7432D /* FMDatabasePool.h */,
+				CD82FA551643F69B00C7432D /* FMDatabasePool.m */,
+				CD82FA561643F69B00C7432D /* FMDatabaseQueue.h */,
+				CD82FA571643F69B00C7432D /* FMDatabaseQueue.m */,
+				CD82FA581643F69B00C7432D /* fmdb.m */,
+				CD82FA591643F69B00C7432D /* FMResultSet.h */,
+				CD82FA5A1643F69B00C7432D /* FMResultSet.m */,
 				CD8681D0163BBDB200667709 /* libsqlite3.dylib */,
 			);
 			name = "Fmdd+Fmdm";
@@ -231,14 +231,14 @@
 			files = (
 				CD8681D5163BBFB800667709 /* Database.h in Headers */,
 				CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */,
-				CD82FA061643F04600C7432D /* FMDatabase.h in Headers */,
-				CD82FA081643F04600C7432D /* FMDatabaseAdditions.h in Headers */,
-				CD82FA0A1643F04600C7432D /* FMDatabasePool.h in Headers */,
-				CD82FA0C1643F04600C7432D /* FMDatabaseQueue.h in Headers */,
-				CD82FA0F1643F04600C7432D /* FMResultSet.h in Headers */,
-				CD82FA171643F05800C7432D /* FmdbMigration.h in Headers */,
-				CD82FA191643F05800C7432D /* FmdbMigrationColumn.h in Headers */,
-				CD82FA1B1643F05800C7432D /* FmdbMigrationManager.h in Headers */,
+				CD82FA5B1643F69B00C7432D /* FMDatabase.h in Headers */,
+				CD82FA5D1643F69B00C7432D /* FMDatabaseAdditions.h in Headers */,
+				CD82FA5F1643F69B00C7432D /* FMDatabasePool.h in Headers */,
+				CD82FA611643F69B00C7432D /* FMDatabaseQueue.h in Headers */,
+				CD82FA641643F69B00C7432D /* FMResultSet.h in Headers */,
+				CD82FA6C1643F70F00C7432D /* FmdbMigration.h in Headers */,
+				CD82FA6E1643F70F00C7432D /* FmdbMigrationColumn.h in Headers */,
+				CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,15 +342,15 @@
 			files = (
 				CD8681D6163BBFB800667709 /* Database.m in Sources */,
 				CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */,
-				CD82FA071643F04600C7432D /* FMDatabase.m in Sources */,
-				CD82FA091643F04600C7432D /* FMDatabaseAdditions.m in Sources */,
-				CD82FA0B1643F04600C7432D /* FMDatabasePool.m in Sources */,
-				CD82FA0D1643F04600C7432D /* FMDatabaseQueue.m in Sources */,
-				CD82FA0E1643F04600C7432D /* fmdb.m in Sources */,
-				CD82FA101643F04600C7432D /* FMResultSet.m in Sources */,
-				CD82FA181643F05800C7432D /* FmdbMigration.m in Sources */,
-				CD82FA1A1643F05800C7432D /* FmdbMigrationColumn.m in Sources */,
-				CD82FA1C1643F05800C7432D /* FmdbMigrationManager.m in Sources */,
+				CD82FA5C1643F69B00C7432D /* FMDatabase.m in Sources */,
+				CD82FA5E1643F69B00C7432D /* FMDatabaseAdditions.m in Sources */,
+				CD82FA601643F69B00C7432D /* FMDatabasePool.m in Sources */,
+				CD82FA621643F69B00C7432D /* FMDatabaseQueue.m in Sources */,
+				CD82FA631643F69B00C7432D /* fmdb.m in Sources */,
+				CD82FA651643F69B00C7432D /* FMResultSet.m in Sources */,
+				CD82FA6D1643F70F00C7432D /* FmdbMigration.m in Sources */,
+				CD82FA6F1643F70F00C7432D /* FmdbMigrationColumn.m in Sources */,
+				CD82FA711643F70F00C7432D /* FmdbMigrationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
