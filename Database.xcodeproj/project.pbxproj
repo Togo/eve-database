@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; };
+		CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9E61640028F00C7432D /* DatabaseMigration.m */; };
+		CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9EA164004BE00C7432D /* MigrationTests.m */; };
+		CD82FA061643F04600C7432D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FB1643F04600C7432D /* FMDatabase.h */; };
+		CD82FA071643F04600C7432D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9FC1643F04600C7432D /* FMDatabase.m */; };
+		CD82FA081643F04600C7432D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */; };
+		CD82FA091643F04600C7432D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */; };
+		CD82FA0A1643F04600C7432D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9FF1643F04600C7432D /* FMDatabasePool.h */; };
+		CD82FA0B1643F04600C7432D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA001643F04600C7432D /* FMDatabasePool.m */; };
+		CD82FA0C1643F04600C7432D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA011643F04600C7432D /* FMDatabaseQueue.h */; };
+		CD82FA0D1643F04600C7432D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA021643F04600C7432D /* FMDatabaseQueue.m */; };
+		CD82FA0E1643F04600C7432D /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA031643F04600C7432D /* fmdb.m */; };
+		CD82FA0F1643F04600C7432D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA041643F04600C7432D /* FMResultSet.h */; };
+		CD82FA101643F04600C7432D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA051643F04600C7432D /* FMResultSet.m */; };
+		CD82FA171643F05800C7432D /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA111643F05800C7432D /* FmdbMigration.h */; };
+		CD82FA181643F05800C7432D /* FmdbMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA121643F05800C7432D /* FmdbMigration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA191643F05800C7432D /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */; };
+		CD82FA1A1643F05800C7432D /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA1B1643F05800C7432D /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA151643F05800C7432D /* FmdbMigrationManager.h */; };
+		CD82FA1C1643F05800C7432D /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA161643F05800C7432D /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
+		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
+		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
+		CD86816D163BBCEB00667709 /* Database.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868153163BBCEB00667709 /* Database.dylib */; };
+		CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD868171163BBCEC00667709 /* InfoPlist.strings */; };
+		CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868175163BBCEC00667709 /* DatabaseTests.m */; };
+		CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8681D0163BBDB200667709 /* libsqlite3.dylib */; };
+		CD8681D5163BBFB800667709 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* Database.h */; };
+		CD8681D6163BBFB800667709 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681D4163BBFB800667709 /* Database.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD86816B163BBCEB00667709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD86814A163BBCEB00667709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD868152163BBCEB00667709;
+			remoteInfo = Database;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD82F9E3164001D100C7432D /* Migration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Migration.h; sourceTree = "<group>"; };
+		CD82F9E51640028F00C7432D /* DatabaseMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseMigration.h; sourceTree = "<group>"; };
+		CD82F9E61640028F00C7432D /* DatabaseMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseMigration.m; sourceTree = "<group>"; };
+		CD82F9E9164004BE00C7432D /* MigrationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationTests.h; sourceTree = "<group>"; };
+		CD82F9EA164004BE00C7432D /* MigrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationTests.m; sourceTree = "<group>"; };
+		CD82F9FB1643F04600C7432D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CD82F9FC1643F04600C7432D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CD82F9FF1643F04600C7432D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CD82FA001643F04600C7432D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CD82FA011643F04600C7432D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CD82FA021643F04600C7432D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CD82FA031643F04600C7432D /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
+		CD82FA041643F04600C7432D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CD82FA051643F04600C7432D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CD82FA111643F05800C7432D /* FmdbMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigration.h; path = "fmdb-migration-manager/Classes/FmdbMigration.h"; sourceTree = SOURCE_ROOT; };
+		CD82FA121643F05800C7432D /* FmdbMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigration.m; path = "fmdb-migration-manager/Classes/FmdbMigration.m"; sourceTree = SOURCE_ROOT; };
+		CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationColumn.h; path = "fmdb-migration-manager/Classes/FmdbMigrationColumn.h"; sourceTree = SOURCE_ROOT; };
+		CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationColumn.m; path = "fmdb-migration-manager/Classes/FmdbMigrationColumn.m"; sourceTree = SOURCE_ROOT; };
+		CD82FA151643F05800C7432D /* FmdbMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationManager.h; path = "fmdb-migration-manager/Classes/FmdbMigrationManager.h"; sourceTree = SOURCE_ROOT; };
+		CD82FA161643F05800C7432D /* FmdbMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationManager.m; path = "fmdb-migration-manager/Classes/FmdbMigrationManager.m"; sourceTree = SOURCE_ROOT; };
+		CD868153163BBCEB00667709 /* Database.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Database.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD868156163BBCEB00667709 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD868159163BBCEB00667709 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CD86815A163BBCEB00667709 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD86815B163BBCEB00667709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD86815E163BBCEB00667709 /* Database-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Database-Prefix.pch"; sourceTree = "<group>"; };
+		CD868167163BBCEB00667709 /* DatabaseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD868168163BBCEB00667709 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CD868170163BBCEB00667709 /* DatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DatabaseTests-Info.plist"; sourceTree = "<group>"; };
+		CD868172163BBCEC00667709 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD868174163BBCEC00667709 /* DatabaseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseTests.h; sourceTree = "<group>"; };
+		CD868175163BBCEC00667709 /* DatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTests.m; sourceTree = "<group>"; };
+		CD8681D0163BBDB200667709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD8681D2163BBE6800667709 /* QueuedDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueuedDatabase.h; sourceTree = "<group>"; };
+		CD8681D3163BBFB800667709 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		CD8681D4163BBFB800667709 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD868150163BBCEB00667709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */,
+				CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD868163163BBCEB00667709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */,
+				CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */,
+				CD86816D163BBCEB00667709 /* Database.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD868148163BBCEB00667709 = {
+			isa = PBXGroup;
+			children = (
+				CD8681B9163BBDA500667709 /* Fmdd+Fmdm */,
+				CD86815C163BBCEB00667709 /* Database */,
+				CD86815D163BBCEB00667709 /* Supporting Files */,
+				CD86816E163BBCEB00667709 /* DatabaseTests */,
+				CD868155163BBCEB00667709 /* Frameworks */,
+				CD868154163BBCEB00667709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD868154163BBCEB00667709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD868153163BBCEB00667709 /* Database.dylib */,
+				CD868167163BBCEB00667709 /* DatabaseTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD868155163BBCEB00667709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD868156163BBCEB00667709 /* Cocoa.framework */,
+				CD868168163BBCEB00667709 /* SenTestingKit.framework */,
+				CD868158163BBCEB00667709 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD868158163BBCEB00667709 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD868159163BBCEB00667709 /* AppKit.framework */,
+				CD86815A163BBCEB00667709 /* CoreData.framework */,
+				CD86815B163BBCEB00667709 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CD86815C163BBCEB00667709 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
+				CD8681D3163BBFB800667709 /* Database.h */,
+				CD8681D4163BBFB800667709 /* Database.m */,
+				CD82F9E3164001D100C7432D /* Migration.h */,
+				CD82F9E51640028F00C7432D /* DatabaseMigration.h */,
+				CD82F9E61640028F00C7432D /* DatabaseMigration.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CD86815D163BBCEB00667709 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD86815E163BBCEB00667709 /* Database-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CD86816E163BBCEB00667709 /* DatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD868174163BBCEC00667709 /* DatabaseTests.h */,
+				CD868175163BBCEC00667709 /* DatabaseTests.m */,
+				CD82F9E9164004BE00C7432D /* MigrationTests.h */,
+				CD82F9EA164004BE00C7432D /* MigrationTests.m */,
+				CD86816F163BBCEB00667709 /* Supporting Files */,
+			);
+			path = DatabaseTests;
+			sourceTree = "<group>";
+		};
+		CD86816F163BBCEB00667709 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD868170163BBCEB00667709 /* DatabaseTests-Info.plist */,
+				CD868171163BBCEC00667709 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD8681B9163BBDA500667709 /* Fmdd+Fmdm */ = {
+			isa = PBXGroup;
+			children = (
+				CD82FA111643F05800C7432D /* FmdbMigration.h */,
+				CD82FA121643F05800C7432D /* FmdbMigration.m */,
+				CD82FA131643F05800C7432D /* FmdbMigrationColumn.h */,
+				CD82FA141643F05800C7432D /* FmdbMigrationColumn.m */,
+				CD82FA151643F05800C7432D /* FmdbMigrationManager.h */,
+				CD82FA161643F05800C7432D /* FmdbMigrationManager.m */,
+				CD82F9FB1643F04600C7432D /* FMDatabase.h */,
+				CD82F9FC1643F04600C7432D /* FMDatabase.m */,
+				CD82F9FD1643F04600C7432D /* FMDatabaseAdditions.h */,
+				CD82F9FE1643F04600C7432D /* FMDatabaseAdditions.m */,
+				CD82F9FF1643F04600C7432D /* FMDatabasePool.h */,
+				CD82FA001643F04600C7432D /* FMDatabasePool.m */,
+				CD82FA011643F04600C7432D /* FMDatabaseQueue.h */,
+				CD82FA021643F04600C7432D /* FMDatabaseQueue.m */,
+				CD82FA031643F04600C7432D /* fmdb.m */,
+				CD82FA041643F04600C7432D /* FMResultSet.h */,
+				CD82FA051643F04600C7432D /* FMResultSet.m */,
+				CD8681D0163BBDB200667709 /* libsqlite3.dylib */,
+			);
+			name = "Fmdd+Fmdm";
+			path = fmdb/src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD868151163BBCEB00667709 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8681D5163BBFB800667709 /* Database.h in Headers */,
+				CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */,
+				CD82FA061643F04600C7432D /* FMDatabase.h in Headers */,
+				CD82FA081643F04600C7432D /* FMDatabaseAdditions.h in Headers */,
+				CD82FA0A1643F04600C7432D /* FMDatabasePool.h in Headers */,
+				CD82FA0C1643F04600C7432D /* FMDatabaseQueue.h in Headers */,
+				CD82FA0F1643F04600C7432D /* FMResultSet.h in Headers */,
+				CD82FA171643F05800C7432D /* FmdbMigration.h in Headers */,
+				CD82FA191643F05800C7432D /* FmdbMigrationColumn.h in Headers */,
+				CD82FA1B1643F05800C7432D /* FmdbMigrationManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD868152163BBCEB00667709 /* Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD868179163BBCEC00667709 /* Build configuration list for PBXNativeTarget "Database" */;
+			buildPhases = (
+				CD86814F163BBCEB00667709 /* Sources */,
+				CD868150163BBCEB00667709 /* Frameworks */,
+				CD868151163BBCEB00667709 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Database;
+			productName = Database;
+			productReference = CD868153163BBCEB00667709 /* Database.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		CD868166163BBCEB00667709 /* DatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD86817C163BBCEC00667709 /* Build configuration list for PBXNativeTarget "DatabaseTests" */;
+			buildPhases = (
+				CD868162163BBCEB00667709 /* Sources */,
+				CD868163163BBCEB00667709 /* Frameworks */,
+				CD868164163BBCEB00667709 /* Resources */,
+				CD868165163BBCEB00667709 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD86816C163BBCEB00667709 /* PBXTargetDependency */,
+			);
+			name = DatabaseTests;
+			productName = DatabaseTests;
+			productReference = CD868167163BBCEB00667709 /* DatabaseTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD86814A163BBCEB00667709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Tobias Sommer";
+			};
+			buildConfigurationList = CD86814D163BBCEB00667709 /* Build configuration list for PBXProject "Database" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD868148163BBCEB00667709;
+			productRefGroup = CD868154163BBCEB00667709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD868152163BBCEB00667709 /* Database */,
+				CD868166163BBCEB00667709 /* DatabaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD868164163BBCEB00667709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD868165163BBCEB00667709 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD86814F163BBCEB00667709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8681D6163BBFB800667709 /* Database.m in Sources */,
+				CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */,
+				CD82FA071643F04600C7432D /* FMDatabase.m in Sources */,
+				CD82FA091643F04600C7432D /* FMDatabaseAdditions.m in Sources */,
+				CD82FA0B1643F04600C7432D /* FMDatabasePool.m in Sources */,
+				CD82FA0D1643F04600C7432D /* FMDatabaseQueue.m in Sources */,
+				CD82FA0E1643F04600C7432D /* fmdb.m in Sources */,
+				CD82FA101643F04600C7432D /* FMResultSet.m in Sources */,
+				CD82FA181643F05800C7432D /* FmdbMigration.m in Sources */,
+				CD82FA1A1643F05800C7432D /* FmdbMigrationColumn.m in Sources */,
+				CD82FA1C1643F05800C7432D /* FmdbMigrationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD868162163BBCEB00667709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */,
+				CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD86816C163BBCEB00667709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD868152163BBCEB00667709 /* Database */;
+			targetProxy = CD86816B163BBCEB00667709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD868171163BBCEC00667709 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD868172163BBCEC00667709 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD868177163BBCEC00667709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD868178163BBCEC00667709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD86817A163BBCEC00667709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD86817B163BBCEC00667709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD86817D163BBCEC00667709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/DatabaseTests\"",
+					"\"$(SRCROOT)/DatabaseTests/libraries\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "DatabaseTests/DatabaseTests-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CD86817E163BBCEC00667709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/DatabaseTests\"",
+					"\"$(SRCROOT)/DatabaseTests/libraries\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "DatabaseTests/DatabaseTests-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD86814D163BBCEB00667709 /* Build configuration list for PBXProject "Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD868177163BBCEC00667709 /* Debug */,
+				CD868178163BBCEC00667709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD868179163BBCEC00667709 /* Build configuration list for PBXNativeTarget "Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86817A163BBCEC00667709 /* Debug */,
+				CD86817B163BBCEC00667709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD86817C163BBCEC00667709 /* Build configuration list for PBXNativeTarget "DatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD86817D163BBCEC00667709 /* Debug */,
+				CD86817E163BBCEC00667709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD86814A163BBCEB00667709 /* Project object */;
+}
