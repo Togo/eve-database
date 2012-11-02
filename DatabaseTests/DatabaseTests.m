@@ -36,6 +36,9 @@
   
   STAssertEqualObjects(db.databaseName, @"test.db", @"");
   STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/test.db", @"");
+  
+   db = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests"];
+  STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/test.db", @"");
 }
 
 - (void) testCreateConnection {

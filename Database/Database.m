@@ -21,6 +21,11 @@
   self = [super init];
   
   self.databaseName = name;
+  
+  if (![path hasSuffix:@"/"] ) {
+    path = [NSString stringWithFormat:@"%@/", path ];
+  }
+  
   self.databasePath = [NSString stringWithFormat:@"%@%@", path, self.databaseName];
   
   [self createDatabaseConnection];
@@ -51,13 +56,15 @@
     [db open];
     
     FMResultSet *resultSet = [db executeQuery:query];
+    
     if ([db hadError]) {
       //      [self printErrorMessage];
     } else {
       while ([resultSet next]) {
-        [results addObject:[resultSet resultDictionary] ];
+        [results addObject:[resultSet resultDictionary]];
       }
     }
+    [db closeOpenResultSets];
     [db close];
   }];
   
