@@ -31,10 +31,11 @@
   
   STAssertNotNil(db, @"Database object is nil");
   STAssertNotNil([db queuedDatabase], @"Database object is nil");
+  STAssertNotNil([db migration], @"Database object is nil");
   STAssertTrue([[db database] open],@"");
   
   STAssertEqualObjects(db.databaseName, @"test.db", @"");
-  STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/", @"");
+  STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/test.db", @"");
 }
 
 - (void) testCreateConnection {
@@ -79,4 +80,5 @@
   query = @"DROP TABLE test_table;";
   STAssertFalse([database executeUpdate:query], @"");
 }
+
 @end

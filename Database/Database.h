@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "QueuedDatabase.h"
+#import "Migration.h"
 
 @interface Database : NSObject <QueuedDatabase, Migration>
 

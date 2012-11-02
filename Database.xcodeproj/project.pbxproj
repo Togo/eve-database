@@ -13,6 +13,9 @@
 		CD4FED51163D27E50086C79F /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED4B163D27E50086C79F /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD4FED52163D27E50086C79F /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4FED4C163D27E50086C79F /* FmdbMigrationManager.h */; };
 		CD4FED53163D27E50086C79F /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4FED4D163D27E50086C79F /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; };
+		CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9E61640028F00C7432D /* DatabaseMigration.m */; };
+		CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9EA164004BE00C7432D /* MigrationTests.m */; };
 		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
 		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
 		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
@@ -52,6 +55,11 @@
 		CD4FED4B163D27E50086C79F /* FmdbMigrationColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationColumn.m; path = "../../fmdb-migration-manager/Classes/FmdbMigrationColumn.m"; sourceTree = "<group>"; };
 		CD4FED4C163D27E50086C79F /* FmdbMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbMigrationManager.h; path = "../../fmdb-migration-manager/Classes/FmdbMigrationManager.h"; sourceTree = "<group>"; };
 		CD4FED4D163D27E50086C79F /* FmdbMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbMigrationManager.m; path = "../../fmdb-migration-manager/Classes/FmdbMigrationManager.m"; sourceTree = "<group>"; };
+		CD82F9E3164001D100C7432D /* Migration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Migration.h; sourceTree = "<group>"; };
+		CD82F9E51640028F00C7432D /* DatabaseMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseMigration.h; sourceTree = "<group>"; };
+		CD82F9E61640028F00C7432D /* DatabaseMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseMigration.m; sourceTree = "<group>"; };
+		CD82F9E9164004BE00C7432D /* MigrationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationTests.h; sourceTree = "<group>"; };
+		CD82F9EA164004BE00C7432D /* MigrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationTests.m; sourceTree = "<group>"; };
 		CD868153163BBCEB00667709 /* Database.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Database.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD868156163BBCEB00667709 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CD868159163BBCEB00667709 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -107,7 +115,7 @@
 		CD868148163BBCEB00667709 = {
 			isa = PBXGroup;
 			children = (
-				CD8681B9163BBDA500667709 /* src */,
+				CD8681B9163BBDA500667709 /* Fmdd+Fmdm */,
 				CD86815C163BBCEB00667709 /* Database */,
 				CD86815D163BBCEB00667709 /* Supporting Files */,
 				CD86816E163BBCEB00667709 /* DatabaseTests */,
@@ -151,6 +159,9 @@
 				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
 				CD8681D3163BBFB800667709 /* Database.h */,
 				CD8681D4163BBFB800667709 /* Database.m */,
+				CD82F9E3164001D100C7432D /* Migration.h */,
+				CD82F9E51640028F00C7432D /* DatabaseMigration.h */,
+				CD82F9E61640028F00C7432D /* DatabaseMigration.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -169,6 +180,8 @@
 			children = (
 				CD868174163BBCEC00667709 /* DatabaseTests.h */,
 				CD868175163BBCEC00667709 /* DatabaseTests.m */,
+				CD82F9E9164004BE00C7432D /* MigrationTests.h */,
+				CD82F9EA164004BE00C7432D /* MigrationTests.m */,
 				CD86816F163BBCEB00667709 /* Supporting Files */,
 			);
 			path = DatabaseTests;
@@ -183,7 +196,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD8681B9163BBDA500667709 /* src */ = {
+		CD8681B9163BBDA500667709 /* Fmdd+Fmdm */ = {
 			isa = PBXGroup;
 			children = (
 				CD4FED48163D27E50086C79F /* FmdbMigration.h */,
@@ -205,7 +218,7 @@
 				CD8681C3163BBDA500667709 /* FMResultSet.h */,
 				CD8681C4163BBDA500667709 /* FMResultSet.m */,
 			);
-			name = src;
+			name = "Fmdd+Fmdm";
 			path = fmdb/src;
 			sourceTree = "<group>";
 		};
@@ -225,6 +238,7 @@
 				CD4FED4E163D27E50086C79F /* FmdbMigration.h in Headers */,
 				CD4FED50163D27E50086C79F /* FmdbMigrationColumn.h in Headers */,
 				CD4FED52163D27E50086C79F /* FmdbMigrationManager.h in Headers */,
+				CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +350,7 @@
 				CD4FED4F163D27E50086C79F /* FmdbMigration.m in Sources */,
 				CD4FED51163D27E50086C79F /* FmdbMigrationColumn.m in Sources */,
 				CD4FED53163D27E50086C79F /* FmdbMigrationManager.m in Sources */,
+				CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */,
+				CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,24 +15,25 @@
 @synthesize databaseName;
 @synthesize databasePath;
 
-@synthesize migrationManager;
+@synthesize migration;
 
 - (id) initWithNameAndPath :(NSString*) name :(NSString*) path {
   self = [super init];
   
   self.databaseName = name;
-  self.databasePath = path;
+  self.databasePath = [NSString stringWithFormat:@"%@%@", path, self.databaseName];
   
   [self createDatabaseConnection];
-  [self executeMigrations];
+  
+  self.migration = [[DatabaseMigration alloc] init];
+  [self executeMigrations :[self databasePath]];
   
   return self;
 }
 
 - (void) createDatabaseConnection {
-  NSString *finalPath = [NSString stringWithFormat:@"%@%@", self.databasePath, self.databaseName];
-  self.database = [FMDatabase databaseWithPath:finalPath];
-  self.queuedDatabase = [FMDatabaseQueue databaseQueueWithPath:finalPath];
+  self.database = [FMDatabase databaseWithPath:[self databasePath]];
+  self.queuedDatabase = [FMDatabaseQueue databaseQueueWithPath:[self databasePath]];
   [self.database logsErrors];
 }
 
@@ -57,7 +58,6 @@
         [results addObject:[resultSet resultDictionary] ];
       }
     }
-    
     [db close];
   }];
   
@@ -83,8 +83,12 @@
   return error;
 }
 
-- (BOOL) executeMigrations {
-  
+- (void) addMigrationObject :(id) migrationObject {
+  [migration addMigrationObject :migrationObject];
+}
+
+- (void) executeMigrations :(NSString*) path {
+  [migration executeMigrations :path];
 }
 
 - (void) printErrorMessage {
