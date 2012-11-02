@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; };
+		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9E61640028F00C7432D /* DatabaseMigration.m */; };
 		CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9EA164004BE00C7432D /* MigrationTests.m */; };
-		CD82FA5B1643F69B00C7432D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA501643F69B00C7432D /* FMDatabase.h */; };
+		CD82FA5B1643F69B00C7432D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA501643F69B00C7432D /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA5C1643F69B00C7432D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA511643F69B00C7432D /* FMDatabase.m */; };
-		CD82FA5D1643F69B00C7432D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA521643F69B00C7432D /* FMDatabaseAdditions.h */; };
+		CD82FA5D1643F69B00C7432D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA521643F69B00C7432D /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA5E1643F69B00C7432D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA531643F69B00C7432D /* FMDatabaseAdditions.m */; };
-		CD82FA5F1643F69B00C7432D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA541643F69B00C7432D /* FMDatabasePool.h */; };
+		CD82FA5F1643F69B00C7432D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA541643F69B00C7432D /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA601643F69B00C7432D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA551643F69B00C7432D /* FMDatabasePool.m */; };
-		CD82FA611643F69B00C7432D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA561643F69B00C7432D /* FMDatabaseQueue.h */; };
+		CD82FA611643F69B00C7432D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA561643F69B00C7432D /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA621643F69B00C7432D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA571643F69B00C7432D /* FMDatabaseQueue.m */; };
 		CD82FA631643F69B00C7432D /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA581643F69B00C7432D /* fmdb.m */; };
-		CD82FA641643F69B00C7432D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA591643F69B00C7432D /* FMResultSet.h */; };
+		CD82FA641643F69B00C7432D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA591643F69B00C7432D /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA651643F69B00C7432D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA5A1643F69B00C7432D /* FMResultSet.m */; };
-		CD82FA6C1643F70F00C7432D /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA661643F70F00C7432D /* FmdbMigration.h */; };
+		CD82FA6C1643F70F00C7432D /* FmdbMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA661643F70F00C7432D /* FmdbMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA6D1643F70F00C7432D /* FmdbMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA671643F70F00C7432D /* FmdbMigration.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CD82FA6E1643F70F00C7432D /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA681643F70F00C7432D /* FmdbMigrationColumn.h */; };
+		CD82FA6E1643F70F00C7432D /* FmdbMigrationColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA681643F70F00C7432D /* FmdbMigrationColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA6F1643F70F00C7432D /* FmdbMigrationColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA691643F70F00C7432D /* FmdbMigrationColumn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA6A1643F70F00C7432D /* FmdbMigrationManager.h */; };
+		CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82FA6A1643F70F00C7432D /* FmdbMigrationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82FA711643F70F00C7432D /* FmdbMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82FA6B1643F70F00C7432D /* FmdbMigrationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD82FA841644048400C7432D /* QueuedDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D2163BBE6800667709 /* QueuedDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD82FA851644048D00C7432D /* Migration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E3164001D100C7432D /* Migration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD868157163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
 		CD868169163BBCEB00667709 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868168163BBCEB00667709 /* SenTestingKit.framework */; };
 		CD86816A163BBCEB00667709 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD868156163BBCEB00667709 /* Cocoa.framework */; };
@@ -34,7 +36,7 @@
 		CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD868171163BBCEC00667709 /* InfoPlist.strings */; };
 		CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868175163BBCEC00667709 /* DatabaseTests.m */; };
 		CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8681D0163BBDB200667709 /* libsqlite3.dylib */; };
-		CD8681D5163BBFB800667709 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* Database.h */; };
+		CD8681D5163BBFB800667709 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD8681D6163BBFB800667709 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681D4163BBFB800667709 /* Database.m */; };
 /* End PBXBuildFile section */
 
@@ -239,6 +241,8 @@
 				CD82FA6C1643F70F00C7432D /* FmdbMigration.h in Headers */,
 				CD82FA6E1643F70F00C7432D /* FmdbMigrationColumn.h in Headers */,
 				CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */,
+				CD82FA841644048400C7432D /* QueuedDatabase.h in Headers */,
+				CD82FA851644048D00C7432D /* Migration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
