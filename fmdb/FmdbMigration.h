@@ -29,6 +29,8 @@
 
 - (void)addColumn:(FmdbMigrationColumn *)column forTableName:(NSString *)tableName;
 
+- (void) executeScript :(NSString*) script_name :(NSString*) fileType :(NSString*) dictionary_name :(FMDatabase*) database;
+
 // This init method exists for the purposes of unit testing.
 // Production code should never call this method, instead instantiate
 // your subclasses with +migration method.

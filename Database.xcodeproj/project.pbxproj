@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD59898C16440E3100B656E6 /* TableAndColumnNames.h in Headers */ = {isa = PBXBuildFile; fileRef = CD59898A16440E3100B656E6 /* TableAndColumnNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD59898D16440E3100B656E6 /* TableAndColumnNames.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59898B16440E3100B656E6 /* TableAndColumnNames.m */; };
 		CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = CD82F9E51640028F00C7432D /* DatabaseMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9E61640028F00C7432D /* DatabaseMigration.m */; };
 		CD82F9EB164004BE00C7432D /* MigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD82F9EA164004BE00C7432D /* MigrationTests.m */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD59898A16440E3100B656E6 /* TableAndColumnNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableAndColumnNames.h; sourceTree = "<group>"; };
+		CD59898B16440E3100B656E6 /* TableAndColumnNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableAndColumnNames.m; sourceTree = "<group>"; };
 		CD82F9E3164001D100C7432D /* Migration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Migration.h; sourceTree = "<group>"; };
 		CD82F9E51640028F00C7432D /* DatabaseMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseMigration.h; sourceTree = "<group>"; };
 		CD82F9E61640028F00C7432D /* DatabaseMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseMigration.m; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 				CD82F9E3164001D100C7432D /* Migration.h */,
 				CD82F9E51640028F00C7432D /* DatabaseMigration.h */,
 				CD82F9E61640028F00C7432D /* DatabaseMigration.m */,
+				CD59898A16440E3100B656E6 /* TableAndColumnNames.h */,
+				CD59898B16440E3100B656E6 /* TableAndColumnNames.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				CD82FA701643F70F00C7432D /* FmdbMigrationManager.h in Headers */,
 				CD82FA841644048400C7432D /* QueuedDatabase.h in Headers */,
 				CD82FA851644048D00C7432D /* Migration.h in Headers */,
+				CD59898C16440E3100B656E6 /* TableAndColumnNames.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +362,7 @@
 				CD82FA6D1643F70F00C7432D /* FmdbMigration.m in Sources */,
 				CD82FA6F1643F70F00C7432D /* FmdbMigrationColumn.m in Sources */,
 				CD82FA711643F70F00C7432D /* FmdbMigrationManager.m in Sources */,
+				CD59898D16440E3100B656E6 /* TableAndColumnNames.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +458,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -461,6 +470,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 			};
 			name = Release;
 		};

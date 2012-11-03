@@ -31,7 +31,6 @@
   [self createDatabaseConnection];
   
   self.migration = [[DatabaseMigration alloc] init];
-  [self executeMigrations :[self databasePath]];
   
   return self;
 }
