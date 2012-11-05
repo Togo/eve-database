@@ -79,7 +79,7 @@
     NSMutableArray * fileLines = [[NSMutableArray alloc] initWithArray:[sql componentsSeparatedByString:@";"] copyItems: YES];
       [db_ open];
       for(NSString *query in fileLines) {
-        [db_ executeUpdateWithFormat:query];
+        [db_ executeUpdate:query];
       }
     
       [db_ close];

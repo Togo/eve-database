@@ -57,7 +57,7 @@
     FMResultSet *resultSet = [db executeQuery:query];
     
     if ([db hadError]) {
-      //      [self printErrorMessage];
+      [self printErrorMessage :query];
     } else {
       while ([resultSet next]) {
         [results addObject:[resultSet resultDictionary]];
@@ -78,7 +78,7 @@
     [db executeUpdate:query];
     if ([db hadError]) {
       error = TRUE;
-//      [self printErrorMessage];
+      [self printErrorMessage :query];
     } else {
       error = FALSE;
     }
@@ -97,7 +97,7 @@
   [migration executeMigrations :path];
 }
 
-- (void) printErrorMessage {
+- (void) printErrorMessage :(NSString*) query {
   [NSException raise:NSInternalInconsistencyException
               format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
 }

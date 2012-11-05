@@ -28,6 +28,6 @@
 - (NSArray*) executeQuery :(NSString*) query;
 - (BOOL) executeUpdate :(NSString*) query;
 
-- (void) printErrorMessage;
+- (void) printErrorMessage :(NSString*) query;
 
 @end
