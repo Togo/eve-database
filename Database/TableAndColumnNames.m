@@ -37,3 +37,9 @@ NSString * const BUNDLE_IDEN_COL = @"bundle_identifier";
 
 // User Data Table Columns
 NSString * const USER_NAME_COL = @"user_name";
+
+// GUI Elements
+NSString * const TITLE_COL = @"element_title";
+NSString * const PARENT_TITLE_COL = @"parent_title";
+NSString * const HELP_COL = @"element_help";
+

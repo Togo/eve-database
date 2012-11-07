@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Tobias Sommer. All rights reserved.
 //
 
-#import "Database.h"
+#import "CoreDatabase.h"
 
-@implementation Database
+@implementation CoreDatabase
 
 @synthesize database;
 @synthesize queuedDatabase;

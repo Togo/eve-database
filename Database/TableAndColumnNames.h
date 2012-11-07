@@ -39,3 +39,7 @@ extern NSString * const BUNDLE_IDEN_COL;
 // User Data Table Columns
 extern NSString * const USER_NAME_COL;
 
+// GUI Elements
+extern NSString * const TITLE_COL;
+extern NSString * const PARENT_TITLE_COL;
+extern NSString * const HELP_COL;

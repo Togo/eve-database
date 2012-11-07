@@ -7,7 +7,7 @@
 //
 
 #import "DatabaseTests.h"
-#import "Database.h"
+#import "CoreDatabase.h"
 
 @implementation DatabaseTests
 
@@ -27,7 +27,7 @@
 
 - (void)testCreateQueuedConnection
 {
-  Database *db = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
+  CoreDatabase *db = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
   
   STAssertNotNil(db, @"Database object is nil");
   STAssertNotNil([db queuedDatabase], @"Database object is nil");
@@ -37,12 +37,12 @@
   STAssertEqualObjects(db.databaseName, @"test.db", @"");
   STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/test.db", @"");
   
-   db = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests"];
+   db = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests"];
   STAssertEqualObjects(db.databasePath, @"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/test.db", @"");
 }
 
 - (void) testCreateConnection {
-  Database *database = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
+  CoreDatabase *database = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
 
   [[database queuedDatabase] inDatabase:^(FMDatabase *db) {
     [db open];
@@ -53,7 +53,7 @@
 }
 
 - (void) testExecuteUpdate {
-  Database *database = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
+  CoreDatabase *database = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
   NSString *query = @"CREATE TABLE \"test_table\" ( \"applications\" string); ";
   STAssertFalse([database executeUpdate:query], @"");
   
@@ -64,7 +64,7 @@
 }
 
 - (void) testexecuteQuery {
-  Database *database = [[Database alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
+  CoreDatabase *database = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
   NSString *query = @"CREATE TABLE \"test_table\" ( \"applications\" string); ";
   STAssertFalse([database executeUpdate:query], @"");
   

@@ -38,8 +38,8 @@
 		CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD868171163BBCEC00667709 /* InfoPlist.strings */; };
 		CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868175163BBCEC00667709 /* DatabaseTests.m */; };
 		CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8681D0163BBDB200667709 /* libsqlite3.dylib */; };
-		CD8681D5163BBFB800667709 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD8681D6163BBFB800667709 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681D4163BBFB800667709 /* Database.m */; };
+		CD8681D5163BBFB800667709 /* CoreDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8681D3163BBFB800667709 /* CoreDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD8681D6163BBFB800667709 /* CoreDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8681D4163BBFB800667709 /* CoreDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +91,8 @@
 		CD868175163BBCEC00667709 /* DatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTests.m; sourceTree = "<group>"; };
 		CD8681D0163BBDB200667709 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CD8681D2163BBE6800667709 /* QueuedDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueuedDatabase.h; sourceTree = "<group>"; };
-		CD8681D3163BBFB800667709 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
-		CD8681D4163BBFB800667709 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		CD8681D3163BBFB800667709 /* CoreDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDatabase.h; sourceTree = "<group>"; };
+		CD8681D4163BBFB800667709 /* CoreDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
-				CD8681D3163BBFB800667709 /* Database.h */,
-				CD8681D4163BBFB800667709 /* Database.m */,
+				CD8681D3163BBFB800667709 /* CoreDatabase.h */,
+				CD8681D4163BBFB800667709 /* CoreDatabase.m */,
 				CD82F9E3164001D100C7432D /* Migration.h */,
 				CD82F9E51640028F00C7432D /* DatabaseMigration.h */,
 				CD82F9E61640028F00C7432D /* DatabaseMigration.m */,
@@ -237,7 +237,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8681D5163BBFB800667709 /* Database.h in Headers */,
+				CD8681D5163BBFB800667709 /* CoreDatabase.h in Headers */,
 				CD82F9E71640028F00C7432D /* DatabaseMigration.h in Headers */,
 				CD82FA5B1643F69B00C7432D /* FMDatabase.h in Headers */,
 				CD82FA5D1643F69B00C7432D /* FMDatabaseAdditions.h in Headers */,
@@ -351,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8681D6163BBFB800667709 /* Database.m in Sources */,
+				CD8681D6163BBFB800667709 /* CoreDatabase.m in Sources */,
 				CD82F9E81640028F00C7432D /* DatabaseMigration.m in Sources */,
 				CD82FA5C1643F69B00C7432D /* FMDatabase.m in Sources */,
 				CD82FA5E1643F69B00C7432D /* FMDatabaseAdditions.m in Sources */,
