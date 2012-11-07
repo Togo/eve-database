@@ -18,12 +18,14 @@ extern NSString * const USER_DATA_TABLE;
 extern NSString * const DISABLED_SHORTCUTS_TABLE;
 extern NSString * const GUI_SUPPORT_TABLE;
 extern NSString * const  DISPLAYED_SHORTCUTS_TABLE;
-
+extern NSString * const  MENU_BAR_SEARCH_TABLE;
 // global Columns
 extern NSString * const ID_COL;
 extern NSString * const APPLICATION_ID_COL;
 extern NSString * const SHORTCUT_ID_COL;
 extern NSString * const USER_ID_COL;
+extern NSString * const IDENTIFIER_COL;
+
 
 // Shortcut Table Columns
 extern NSString * const SHORTCUT_STRING_COL;

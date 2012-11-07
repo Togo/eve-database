@@ -17,12 +17,13 @@ NSString * const USER_DATA_TABLE = @"user_data";
 NSString * const DISABLED_SHORTCUTS_TABLE = @"disabled_shortcuts";
 NSString * const GUI_SUPPORT_TABLE = @"gui_supported_apps";
 NSString * const  DISPLAYED_SHORTCUTS_TABLE = @"displayed_shortcuts";
-
+NSString * const  MENU_BAR_SEARCH_TABLE = @"menu_bar_search";
 // global
 NSString * const ID_COL = @"id";
 NSString * const APPLICATION_ID_COL = @"application_id";
 NSString * const SHORTCUT_ID_COL = @"shortcut_id";
 NSString * const USER_ID_COL = @"user_id";
+NSString * const IDENTIFIER_COL = @"identifier";
 
 // shortcut table
 NSString * const SHORTCUT_STRING_COL = @"shortcut_string";
