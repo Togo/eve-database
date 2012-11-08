@@ -38,7 +38,7 @@
 		CD868173163BBCEC00667709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD868171163BBCEC00667709 /* InfoPlist.strings */; };
 		CD868176163BBCEC00667709 /* DatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD868175163BBCEC00667709 /* DatabaseTests.m */; };
 		CD8681D1163BBDB200667709 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8681D0163BBDB200667709 /* libsqlite3.dylib */; };
-		CDFF8CD2164B0CFD00A5EA5A /* CoreDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFF8CD0164B0CFD00A5EA5A /* CoreDatabase.h */; };
+		CDFF8CD2164B0CFD00A5EA5A /* CoreDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFF8CD0164B0CFD00A5EA5A /* CoreDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDFF8CD3164B0CFD00A5EA5A /* CoreDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF8CD1164B0CFD00A5EA5A /* CoreDatabase.m */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +51,18 @@
 			remoteInfo = Database;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDFF8CE8164B7B8600A5EA5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD59898A16440E3100B656E6 /* TableAndColumnNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableAndColumnNames.h; sourceTree = "<group>"; };
@@ -263,6 +275,7 @@
 				CD86814F163BBCEB00667709 /* Sources */,
 				CD868150163BBCEB00667709 /* Frameworks */,
 				CD868151163BBCEB00667709 /* Headers */,
+				CDFF8CE8164B7B8600A5EA5A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -453,24 +466,32 @@
 		CD86817A163BBCEC00667709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				INSTALL_PATH = "";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/Database.dylib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		CD86817B163BBCEC00667709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Database/Database-Prefix.pch";
+				INSTALL_PATH = "";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/Database.dylib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
