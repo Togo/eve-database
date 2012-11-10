@@ -43,4 +43,5 @@ NSString * const START_AT_LOGIN_COL = @"start_at_login";
 NSString * const TITLE_COL = @"element_title";
 NSString * const PARENT_TITLE_COL = @"parent_title";
 NSString * const HELP_COL = @"element_help";
+NSString * const COCOA_IDENTIFIER_COL = @"cocoa_identifier";
 

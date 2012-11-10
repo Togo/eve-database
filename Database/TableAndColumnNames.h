@@ -44,3 +44,5 @@ extern NSString * const START_AT_LOGIN_COL;
 extern NSString * const TITLE_COL;
 extern NSString * const PARENT_TITLE_COL;
 extern NSString * const HELP_COL;
+extern NSString * const COCOA_IDENTIFIER_COL;
+
