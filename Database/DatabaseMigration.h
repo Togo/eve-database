@@ -11,7 +11,7 @@
 
 @interface DatabaseMigration : NSObject <Migration>
 
-@property NSMutableArray *migrationsToExecute;
+@property (strong, nonatomic) NSMutableArray *migrationsToExecute;
 
 - (void) executeMigrations :(NSString*) databasePath;
 - (void) addMigrationObject :(id) migrationObject;
