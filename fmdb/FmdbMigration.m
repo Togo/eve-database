@@ -69,23 +69,6 @@
 	[db_ executeUpdate:sql];
 }
 
-- (void) executeScript :(NSString*) script_name :(NSString*) fileType :(NSString*) dictionary_name :(FMDatabase*) database {
-  self.db = database;
-  NSString *finalPath =  [[NSBundle mainBundle] pathForResource:script_name  ofType:fileType inDirectory:dictionary_name];
-  NSData *myData = [NSData dataWithContentsOfFile:finalPath];
-  
-  if (myData) {
-    NSString *sql = [NSString stringWithUTF8String:[myData bytes]];
-    NSMutableArray * fileLines = [[NSMutableArray alloc] initWithArray:[sql componentsSeparatedByString:@";"] copyItems: YES];
-      [db_ open];
-      for(NSString *query in fileLines) {
-        [db_ executeUpdate:query];
-      }
-    
-      [db_ close];
-    }
-}
-
 #pragma mark -
 #pragma mark Unit testing helpers
 

@@ -174,9 +174,9 @@
 		CD86815C163BBCEB00667709 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
 				CDFF8CD0164B0CFD00A5EA5A /* CoreDatabase.h */,
 				CDFF8CD1164B0CFD00A5EA5A /* CoreDatabase.m */,
-				CD8681D2163BBE6800667709 /* QueuedDatabase.h */,
 				CD82F9E3164001D100C7432D /* Migration.h */,
 				CD82F9E51640028F00C7432D /* DatabaseMigration.h */,
 				CD82F9E61640028F00C7432D /* DatabaseMigration.m */,

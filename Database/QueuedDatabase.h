@@ -30,4 +30,5 @@
 
 - (void) printErrorMessage :(NSString*) query;
 
+- (void) executeScript :(NSString*) script_name :(NSString*) fileType :(NSString*) dictionary_name;
 @end

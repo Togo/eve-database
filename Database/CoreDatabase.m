@@ -54,6 +54,9 @@
   [self.queuedDatabase inDatabase:^(FMDatabase *db) {
     [db open];
     
+    if(![db open])
+      [self printErrorMessage:@"Error open Database in executeQuery"];
+    
     FMResultSet *resultSet = [db executeQuery:query];
     
     if ([db hadError]) {
@@ -63,7 +66,9 @@
         [results addObject:[resultSet resultDictionary]];
       }
     }
+    
     [db closeOpenResultSets];
+    
     [db close];
   }];
   
@@ -73,7 +78,9 @@
 - (BOOL) executeUpdate :(NSString*) query {
   __block BOOL error;
   [self.queuedDatabase inDatabase:^(FMDatabase *db) {
-    [db open];
+    
+    if(![db open])
+      [self printErrorMessage:@"Error open Database in executeUpdate"];
     
     [db executeUpdate:query];
     if ([db hadError]) {
@@ -100,6 +107,33 @@
 - (void) printErrorMessage :(NSString*) query {
   [NSException raise:NSInternalInconsistencyException
               format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+}
+
+- (void) executeScript :(NSString*) script_name :(NSString*) fileType :(NSString*) dictionary_name {
+  NSString *finalPath =  [[NSBundle mainBundle] pathForResource:script_name  ofType:fileType inDirectory:dictionary_name];
+  NSData *myData = [NSData dataWithContentsOfFile:finalPath];
+  
+  if (myData) {
+    NSString *sql = [NSString stringWithUTF8String:[myData bytes]];
+    NSMutableArray * fileLines = [[NSMutableArray alloc] initWithArray:[sql componentsSeparatedByString:@";"] copyItems: YES];
+    
+    if ([fileLines count] == 0) {
+      [self printErrorMessage:@"No Lines in SQL Script Array "];
+    }
+    
+    [self.queuedDatabase inDatabase:^(FMDatabase *db) {
+      
+      if(![db open])
+          [self printErrorMessage:@"Error open Database in executeUpdate"];
+      
+      for(NSString *query in fileLines)
+        [db executeUpdate:query];
+      
+      [db close];
+      }];
+  } else {
+    [self printErrorMessage:@"No Data in SQL Script"];
+  }
 }
 
 @end
