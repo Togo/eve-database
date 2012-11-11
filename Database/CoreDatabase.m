@@ -114,12 +114,13 @@
   NSData *myData = [NSData dataWithContentsOfFile:finalPath];
   
   if (myData) {
-    NSString *sql = [NSString stringWithUTF8String:[myData bytes]];
+//    NSString *sql = [NSString stringWithUTF8String:[myData bytes]];
+    NSString *sql = [[NSString alloc] initWithData:myData encoding:NSUTF8StringEncoding];
     NSMutableArray * fileLines = [[NSMutableArray alloc] initWithArray:[sql componentsSeparatedByString:@";"] copyItems: YES];
     
-    if ([fileLines count] == 0) {
+    if ([fileLines count] == 0)
       [self printErrorMessage:@"No Lines in SQL Script Array "];
-    }
+    
     
     [self.queuedDatabase inDatabase:^(FMDatabase *db) {
       
