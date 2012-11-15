@@ -16,8 +16,9 @@ NSString * const APPLICATIONS_TABLE = @"applications";
 NSString * const USER_DATA_TABLE = @"user_data";
 NSString * const DISABLED_SHORTCUTS_TABLE = @"disabled_shortcuts";
 NSString * const GUI_SUPPORT_TABLE = @"gui_supported_apps";
-NSString * const  DISPLAYED_SHORTCUTS_TABLE = @"displayed_shortcuts";
-NSString * const  MENU_BAR_SEARCH_TABLE = @"menu_bar_search";
+NSString * const DISPLAYED_SHORTCUTS_TABLE = @"displayed_shortcuts";
+NSString * const MENU_BAR_SEARCH_TABLE = @"menu_bar_search";
+NSString * const GLOB_DISABLED_SHORTCUTS_TABLE = @"global_disabled_shortcuts";
 
 // global columns
 NSString * const ID_COL = @"id";
@@ -34,6 +35,8 @@ NSString * const SHORTCUT_STRING_COL = @"shortcut_string";
 // Application Table Columns
 NSString * const APP_NAME_COL = @"app_name";
 NSString * const BUNDLE_IDEN_COL = @"bundle_identifier";
+NSString * const GUI_SUPPORT_COL = @"gui_support";
+NSString * const MENU_BAR_SUPPORT_COL = @"menu_bar_support";
 
 // User Data Table Columns
 NSString * const USER_NAME_COL = @"user_name";
@@ -44,4 +47,8 @@ NSString * const TITLE_COL = @"element_title";
 NSString * const PARENT_TITLE_COL = @"parent_title";
 NSString * const HELP_COL = @"element_help";
 NSString * const COCOA_IDENTIFIER_COL = @"cocoa_identifier";
+
+// dynamic table header
+NSString * const DISABLED_SHORTCUT_DYN_COL = @"disabled_shortcut";
+NSString * const GLOB_DISABLED_SHORTCUT_DYN_COL = @"global_disabled_shortcuts";
 
