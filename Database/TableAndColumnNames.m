@@ -19,6 +19,7 @@ NSString * const GUI_SUPPORT_TABLE = @"gui_supported_apps";
 NSString * const DISPLAYED_SHORTCUTS_TABLE = @"displayed_shortcuts";
 NSString * const MENU_BAR_SEARCH_TABLE = @"menu_bar_search";
 NSString * const GLOB_DISABLED_SHORTCUTS_TABLE = @"global_disabled_shortcuts";
+NSString * const APPLICATION_BLACKLIST_TABLE = @"application_blacklist";
 
 // global columns
 NSString * const ID_COL = @"id";

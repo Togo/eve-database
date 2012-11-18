@@ -20,6 +20,7 @@ extern NSString * const GUI_SUPPORT_TABLE;
 extern NSString * const DISPLAYED_SHORTCUTS_TABLE;
 extern NSString * const MENU_BAR_SEARCH_TABLE;
 extern NSString * const GLOB_DISABLED_SHORTCUTS_TABLE;
+extern NSString * const APPLICATION_BLACKLIST_TABLE;
 
 // global Columns
 extern NSString * const ID_COL;
