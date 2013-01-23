@@ -36,8 +36,7 @@ NSString * const SHORTCUT_STRING_COL = @"shortcut_string";
 // Application Table Columns
 NSString * const APP_NAME_COL = @"app_name";
 NSString * const BUNDLE_IDEN_COL = @"bundle_identifier";
-NSString * const GUI_SUPPORT_COL = @"gui_support";
-NSString * const MENU_BAR_SUPPORT_COL = @"menu_bar_support";
+
 
 // User Data Table Columns
 NSString * const USER_NAME_COL = @"user_name";

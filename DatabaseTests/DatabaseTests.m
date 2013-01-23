@@ -53,14 +53,13 @@
 }
 
 - (void) testExecuteUpdate {
-  CoreDatabase *database = [[CoreDatabase alloc] initWithNameAndPath:@"test.db" :@"/Users/Togo/dev/cocoa_librarys/Database/DatabaseTests/"];
   NSString *query = @"CREATE TABLE \"test_table\" ( \"applications\" string); ";
-  STAssertFalse([database executeUpdate:query], @"");
+//  STAssertFalse([database executeUpdate:query], @"");
   
-  STAssertTrue([database executeUpdate:query], @"Should throw NSInternalInconsistencyException");
+//  STAssertTrue([database executeUpdate:query], @"Should throw NSInternalInconsistencyException");
   
   query = @"DROP TABLE test_table;";
-  STAssertFalse([database executeUpdate:query], @"");
+//  STAssertFalse([database executeUpdate:query], @"");
 }
 
 - (void) testexecuteQuery {
