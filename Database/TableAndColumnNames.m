@@ -29,6 +29,8 @@ NSString * const USER_ID_COL = @"user_id";
 NSString * const IDENTIFIER_COL = @"identifier";
 NSString * const LANG_COL = @"lang";
 NSString * const TIMESTAMP = @"timestamp";
+NSString * const MODULE_ID_COL = @"module_id";
+
 
 // shortcut table
 NSString * const SHORTCUT_STRING_COL = @"shortcut_string";

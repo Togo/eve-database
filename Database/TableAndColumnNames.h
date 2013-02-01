@@ -30,6 +30,7 @@ extern NSString * const USER_ID_COL;
 extern NSString * const IDENTIFIER_COL;
 extern NSString * const LANG_COL;
 extern NSString * const TIMESTAMP;
+extern NSString * const MODULE_ID_COL;
 
 // Shortcut Table Columns
 extern NSString * const SHORTCUT_STRING_COL;
