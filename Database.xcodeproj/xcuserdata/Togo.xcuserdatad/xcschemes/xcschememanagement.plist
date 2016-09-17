@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Databse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CD2DC0461D7215870045028B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD2DC04F1D7215870045028B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CD868152163BBCEB00667709</key>
 		<dict>
 			<key>primary</key>
